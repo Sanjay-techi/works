@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>My To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList">
+
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.checked {
+    text-decoration: line-through;
+    background: #d4edda;
+}
+
+li button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+}
+span{
+   margin-left: 400px;
+   position: fixed;
+
+}
+</style>
+
+
+<script>
+function addTask() {
+    var taskInput = document.getElementById('taskInput');
+    var taskList = document.getElementById('taskList');
+        
+
+    if (taskInput.value.trim() !== "") {
+        var li = document.createElement('li');
+        li.textContent = taskInput.value;
+
+        
+        let removeBtn = document.createElement("span");
+        removeBtn.textContent = 'x';
+        removeBtn.className = "removeBtn";
+        removeBtn.onclick = function () {
+            li.remove();
+        }
+        li.appendChild(removeBtn);
+
+        var checkButton = document.createElement('button');
+        checkButton.textContent = '✔';
+        checkButton.onclick = function () {
+            li.classList.toggle('checked');
+        };
+
+        li.appendChild(checkButton);
+        taskList.appendChild(li);
+        taskInput.value = "";
+    }
+}
+document.getElementById('taskInput').onkeydown=function(e){
+    if(e.key==='Enter'){
+        addTask() ;
+    }
+}
+</script>

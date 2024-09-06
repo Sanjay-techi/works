@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //write a javasript program to check the number is  b/w 10&20 and print the  number is with in the range//
+        /*let num=10;
+            let number=prompt("enter the number")
+           if (num >=10&&number <=20)
+           {
+           console.log("number with in the range")
+           }
+        //write a simple if statement program to check if a number is greater than 10 then print the message the number is greater than 10//
+
+
+
+        let num =prompt("enter the number")
+         if( num>=10 && num<=10){
+          console.log("the number is greater than 10")
+         }
+         else{
+          console.log("the number is less than 10")
+  
+         }
+
+        let age=prompt("enter age:");
+        if (age>=18){
+         Window.alert("you are eligible to vote");
+        }
+        else{
+         window.alert("you are not eligible to vote");
+        }
+
+         let score=prompt("enter score:");
+         if(score>=90){
+          window.alert("grade:A");
+         }
+         else if(score>=80){
+          window.alert("grade:B");
+         }
+         else if (score>=50){
+          window.alert("grade:C");
+         }
+         else{
+          window.alert("grade:F");
+         }
+
+        //write a javascript pgm to check the number is negative positive or zero//
+
+        let number=prompt("check the number:");
+        if (number>0){
+            window.alert("number is negative");
+        }
+        else if (number<10){
+            window.alert("number is positive");
+        }
+
+        //write a javascript program to check weather a given age qualifies as a miner adult or seaner//
+         let age=prompt("check the age:");
+         if (age<=12){
+             window.alert("minor");
+         }
+         else if(age<=){
+             window.alert("adult");
+         }
+         else if(age<=60){
+             window.alert("senior");
+         }
+         else{
+             window.alert("dead");
+         }
+
+        //write a javascript pgm to check weather a number is even or odd//
+
+        let number = prompt("check number even or odd:");
+        if (number == 0) {
+            window.alert("number is zero");
+        }
+        else if (number % 2 == 0) {
+            window.alert("number is even");
+        }
+        else {
+            window.alert("number is odd");
+        }
+
+        let number = prompt("enter a number:")
+        if (number > 0) {
+            console.log(number + "is a positive number");
+            if (number % 2 == 0) {
+                console.log(number + "is even");
+            }
+            else {
+                console.log(number + "is odd");
+            }
+        }
+        else {
+            console.log(number + "is not a positive number");
+        }
+       
+
+        let num=prompt("check number");
+        let result=(num %2===0)?"even":"odd";
+        console.log(result);
+
+
+        let dayNumber = parseInt(prompt("Enter Day number(1-7): ")); 
+        let dayName;
+        switch (dayNumber) {
+            case 1:
+                dayName = "mon";
+                break;
+            case 2:
+                dayName = "tue";
+                break;
+            case 3:
+                dayName = "wed";
+                break;
+            case 4:
+                dayName = "thur";
+                break;
+            case 5:
+                dayName = "fri";
+                break;
+            case 6:
+                dayName = "sat";
+                break;
+            case 7:
+                dayName = "sun";
+                break;
+            default:
+                "invalied dayName";
+
+        }
+        window.alert("day" + dayNumber + "is" + dayName + ".");
+
+        //grade card//
+        let mark =parseInt(prompt("Enter grade(A-F): ")); 
+        switch (mark) {
+            case 1:
+              mark=  "grade A";
+                break;
+            case 2:
+             mark=  "grade B";
+                break;
+            case 3:
+              mark=   "grade c";
+                break;
+            case 4:
+               mark=  "grade d";
+                break;
+            case 5:
+              mark=  "grade e"
+                break;
+            case 6:
+              mark=  "grade f";
+                break;
+                default:
+                    mark="invalied mark";
+        }
+        console.log(mark);
+
+
+        //calculater//
+
+       let num1=prompt("enter 1st number");
+       let num2=prompt("enter 2nd number");
+       let operater=prompt("enter the operater");
+       switch(operater){
+        case "+": result=num1+num2
+        break;
+        case "-": result= num1-num2
+        break;
+        case "/":result= num1/num2
+        break;
+        case "*": result=num1*num2
+        break;
+        default:
+       result= "invalied operater"
+       }
+       console.log(result);
+
+       let month=parseInt (prompt("enter month 1-12"));
+       switch(month){
+        case 1:month="jan";
+           break;
+           case 2: month="feb";
+           break;
+           case 3: month="mar";
+           break;
+           case 4: month="apr";
+           break;
+           case 5: month="may";
+           break;
+           case 6: month="june";
+           break;
+           case 7: month="july";
+           break;
+           case 8: month="aug";
+           break;
+           case 9: month="sep";
+           break;
+           case 10: month="oct";
+           break;
+           case 11: month="nov";
+           break;
+           case 12: month="dec";
+           break;
+           default:
+            month="invalid month"  
+           
+       }
+       console.log(month);
+
+       for(let  i=0; i<3; i++){
+       console.log("hello,world!");
+       }
+         
+
+       for(let i=0; i<=10; i++){
+        console.log(i);
+       }
+
+        for (let i=10; i>0; i--) {
+           console.log(i);
+        }
+
+        for(let i=0; i<10; i+2){
+            console.log(i);
+        }
+
+//create multiplication table//
+        const number=6;
+        for(let i=1; i<=10; i++){
+            console.log(`${number} * ${i}=${number * i}`);
+        }
+//write a javascrip pgm to print odd number into reverse order//
+
+for (let i=9; i>=1; i-=2){
+    console.log(i);
+}
+
+
+//while loop//
+
+let i=1;
+while(i<4){
+    console.log(i);
+    i+=1;
+}
+
+let num=0,sum=0
+while(num>=0){
+    sum+=num;
+    num=parseInt(prompt("enter the value"));
+}
+console.log(`the sum is${sum}`);
+
+
+//pgm to displlay the sum of natural numbers//
+let n=10;
+let sum=0;
+for(i=n; i<=n; i++){
+    sum=sum+i
+}
+
+//write a java script to calculate the area of a triangle//
+
+
+let base=parseInt(prompt("enter the base of triangle"));
+let  height=parseInt(prompt("enter the height of triangle"));
+let area=0.5 *base*height;
+console.log(area);
+
+//write a javascript program to swap a variable//
+
+let a="apple";
+let b="orange";
+let temp=a;
+temp=a;
+a=b;
+b=temp;
+console.log(`${a} ${b}`);
+
+
+//write a program to find the largest among three numbers//
+
+const num4=parseInt(prompt("enter first value"));
+const num5=parseInt(prompt("enter second value"));
+const num6=parseInt(prompt("enter third value"));
+    
+    if(num1 >= num2 && num1 >= num3) {
+        console.log("largest number");
+    }
+     else if(num2 >= num1 && num2 >= num3) {
+        console.log("smallest number");
+    }
+     else{
+        invalied;
+    }
+
+        let num1 = parseInt(prompt("enter 1st number"));
+        let num2 = parseInt(prompt("enter 2nd number"));
+        let num3 = parseInt(prompt("enter 3rd number"));
+        let largest;
+        if (num1 >= num2 && num1 >= num3) {
+            largest = num1;
+        }
+        else if (num2 >= num1 && num2 >= num3) {
+            largest = num2;
+        }
+        else {
+            largest = num3;
+        }
+        console.log("the largest number is" + largest);
+
+        //do while loop//
+
+
+        let i=3;
+        do{
+            console.log(i);
+            i--;
+        }
+        while(i>0);
+
+        const student={
+            name:"sanju",
+            class:12
+        }
+        for(let key in student){
+            console.log(`${key}=>${student[key]}`);
+        }
+       
+        //write a javascript pgm to find the square root of a number//
+
+       let num=parseInt(prompt("enter the value"));
+        result= Math.sqrt(num);
+        console.log(result);
+
+        let n1=parseInt(prompt("enter 1st value"));
+        let n2=parseInt(prompt("enter 2nd value"));
+        let n3=parseInt(prompt("enter 3rd value"));
+        result=Math.max(n1,n2,n3);
+        console.log(result);
+
+        
+        let n4=parseInt(prompt("enter 1st value"));
+        let n5=parseInt(prompt("enter 2nd value"));
+        let n6=parseInt(prompt("enter 3rd value"));
+        result=Math.min(n4,n5,n6);
+        console.log(result);
+
+
+        //javascript function//
+
+        let x=myFunction(5,6);
+
+        function myFunction(a,b){
+            return a*b;
+        }
+
+        //find area of a rectangle//
+
+        function rectangle(c, d) {
+            return c * d;
+        }
+        let x = rectangle(5, 6);
+        console.log(x);
+
+
+        function hello() {
+            console.log("hello");
+        }
+        hello();
+
+        //create a javascript function to add two numbers//
+
+        let a=parseInt(prompt("first 1st value"));
+        let b=parseInt(prompt("enter 2nd value"));
+        function add(){
+            console.log(a+b);
+        }
+        add();
+
+        //write a funtion to find a square of a number//
+        
+        function square(a){
+            sq = a*a;
+            console.log(sq);   
+        }
+        square(6)
+
+       //multiplication table//
+
+       
+       const number=2;
+        for(let i=1; i<=10; i++){
+            console.log(`${number} * ${i}=${number * i}`);
+        }
+    
+
+   
+    function multi(num){
+        for(let i=1; i<=10; i++)
+            console.log(`${num} * ${i}=${num * i}`);
+    }
+    num=parseInt(prompt("enter value"));
+    multi(num);
+   
+  
+ function sub(num1){
+    for(let i=1; i<=10; i--)
+    console.log(`${num1} * ${num1 * i}`);
+ }
+ num1=parseInt(prompt("enter value"));
+ sub
+(num1);
+
+
+//farenheit to celsius//
+function toCelsius(farenhit){
+    return(5/9)*(fahrenheit-32);
+}
+let value=toCelsius(77); 
+
+
+//write a pgm to print fibanocci sequence//
+
+let num=parseInt(prompt("enter the fibanocci series"));
+let num1=0, num2=1,nextterm;
+for(let i=1; i<=num; i++){
+    console.log(num1);
+    nextterm= num1 + num2;
+    num1=num2;
+    num2=nextterm;
+}
+
+
+
+//palindrome//
+
+function checkpalindrome(string){
+    const arrayvalue=string.split('');
+    const reverse=arrayvalue.reverse();
+    const reversestring=reverse.join('');
+    if(string==reversestring){
+        console.log("it is palindrome");
+    }
+    else{
+        console.log("it is not a palindrome");
+    }
+}
+
+const string=prompt("enter the string");
+checkpalindrome(string);
+
+
+
+//factorial//
+let f=1;
+let num=prompt("enter the value");
+for( i=1;i<=num;i++){
+    f=f*i;
+}
+console.log(f);
+
+//prime number or not//
+
+
+function checkprime(num){
+    let i, value=true;
+    for(i=2; i<=num -1;i++){
+        if(num % i==0){
+            value=false;
+            break;
+        }
+    }
+    if(value==true){
+    console.log("it is prime");
+    }
+    else{
+    console.log("is not prime");
+     }
+      }
+let num=(prompt("check prime or not"));
+    checkprime(num);
+
+
+
+
+
+//pyramid//
+let n = 5; 
+for (let i = 1; i <= n; i++) { 
+    let star = "* "; 
+    let space = "  "; 
+    console.log(space.repeat((n - i)) + star.repeat(i * 2 - 1)); 
+}
+
+let n = 5; 
+ for (let i = 1; i <= n; i++) {
+let line = '';
+ for (let j = 1; j <= i; j++) {
+ line += i; 
+ }
+ console.log(line); 
+ }
+
+ let n = 5; 
+ for (let i = n; i >= 1; i--) {
+ let line = '';
+ for (let j = 1; j <= i; j++) {
+ line += '*';
+ }
+ console.log(line);
+ }
+//pyramid reverse//
+ 
+ let n = 5; 
+for (let i = n; i >=1; i--) { 
+    let star = "* "; 
+    let space = "  "; 
+    console.log(space.repeat((n - i)) + star.repeat(i * 2 - 1)); 
+}*/
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="calculator card">
+
+        <input id="display" class="calculator-screen " value="" readonly>
+
+        <div class="calculator-keys">
+            <button onclick="appendToDisplay('+')" type="button" data-mdb-button-init class="operator btn btn-info" value="+">+</button>
+            <button onclick="appendToDisplay('-')" type="button" data-mdb-button-init class="operator btn btn-info" value="-">-</button>
+            <button onclick="appendToDisplay('*')" type="button" data-mdb-button-init class="operator btn btn-info" value="*">&times;</button>
+            <button onclick="appendToDisplay('/')" type="button" data-mdb-button-init class="operator btn btn-info" value="/">&divide;</button>
+
+
+            <button onclick="appendToDisplay('1')" type="button" data-mdb-button-init value="1" data-mdb-ripple-init
+                class="btn btn-light waves-effect">1</button>
+            <button onclick="appendToDisplay('2')"type="button" data-mdb-button-init value="2" data-mdb-ripple-init
+                class="btn btn-light waves-effect">2</button>
+            <button onclick="appendToDisplay('3')" type="button" data-mdb-button-init value="3" data-mdb-ripple-init
+                class="btn btn-light waves-effect">3</button>
+
+
+            <button onclick="appendToDisplay('4')" type="button" data-mdb-button-init value="4" data-mdb-ripple-init
+                class="btn btn-light waves-effect">4</button>
+            <button onclick="appendToDisplay('5')" type="button" data-mdb-button-init value="5" data-mdb-ripple-init
+                class="btn btn-light waves-effect">5</button>
+            <button onclick="appendToDisplay('6')" type="button" data-mdb-button-init value="6" data-mdb-ripple-init
+                class="btn btn-light waves-effect">6</button>
+
+
+            <button onclick="appendToDisplay('7')" type="button" data-mdb-button-init value="7" data-mdb-ripple-init
+                class="btn btn-light waves-effect">7</button>
+            <button onclick="appendToDisplay('8')" type="button" data-mdb-button-init value="8" data-mdb-ripple-init
+                class="btn btn-light waves-effect">8</button>
+            <button onclick="appendToDisplay('9')" type="button" data-mdb-button-init value="9" data-mdb-ripple-init
+                class="btn btn-light waves-effect">9</button>
+            <button onclick="appendToDisplay('0')" type="button" data-mdb-button-init value="0" data-mdb-ripple-init
+                class="btn btn-light waves-effect">0</button>
+
+
+            <button onclick="appendToDisplay('.')" type="button" data-mdb-button-init class="decimal function btn btn-light waves-effect" value=".">.</button>
+            <button onclick="appendToDisplay('%')" type="button" data-mdb-button-init class="operator btn btn-light waves-effect" value="%">%</button>
+            <button onclick="appendToDisplay('√')" type="button" data-mdb-button-init class="operator btn btn-light waves-effect" value=" √ "> √ </button>
+            <button onclick="appendToDisplay('()')"type="button" data-mdb-button-init class="operator btn btn-light waves-effect" value="()">( )</button>
+            <button onclick="clearDisplay()"type="button" data-mdb-button-init class="operator function btn btn-danger btn-sm"
+                value="all-clear">AC</button>
+
+            <button onclick="calculate()" type="button" data-mdb-button-init class="equal-sign function btn btn btn-success"value="calculate">=</button>
+
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+
+</html>

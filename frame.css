@@ -1,0 +1,25 @@
+.content1{
+    width:800pxpx;
+    height:200px;
+    padding: 5px;
+    margin: 2px;
+    background-color: gray;
+    border: 5px solid red;
+
+}
+.content2{
+    width:800pxpx; 
+    padding: 5px;
+    height:200px;
+    margin:2px;
+    background-color: pink;
+    border: 5px solid orange;
+}
+.content3{
+    width:800pxpx;
+    height:200px;
+    padding: 5px;
+    margin: 2px;
+    background-color: skyblue;
+    border: 5px solid blue;
+}

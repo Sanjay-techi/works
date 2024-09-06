@@ -1,0 +1,13 @@
+.size{
+border: 5px solid red;
+position:fixed;
+}
+.size2{
+    position: absolute;
+    border :3px solid green;
+    top:100px;
+left: 800px;
+right: 100px;
+width: 100px;
+height: 100px;
+}

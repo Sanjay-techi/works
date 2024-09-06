@@ -1,0 +1,150 @@
+ul li{
+    list-style: none;
+    display: inline-block;
+   
+}
+a{
+    text-decoration: none;
+    height: 50px;
+    color:white;
+    background-color:black;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 8px;
+   
+}
+marquee{
+    letter-spacing: 10px;
+    width: 800px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+nav{
+    height: 50px;
+    padding-top: 2px;
+    text-align: center;
+    width: 600px;
+    height: 50px;
+}
+#home{
+    text-align:center;
+    width:600px;
+    height:400px;
+    margin-left: 100px;
+    background-image: url("https://png.pngtree.com/element_our/png/20180823/auto-car-service-template-png_62235.jpg");
+    background-repeat: no-repeat;
+}
+input[type="text"]{
+    width: 200px;
+    height: 30px;
+    border:2px solid gray;
+    background-color: #AAC0;
+    border-radius: 10px;
+    
+}
+input[type="number"]{
+    width: 200px;
+    height: 30px;
+    border:2px solid gray;
+    background-color: #AAC0;
+    border-radius: 10px;
+    
+}
+input[type="password"]{
+    width: 200px;
+    height: 30px;
+    border:2px solid gray;
+    background-color: #AAC0;
+    border-radius: 10px;
+   
+}
+button{
+    color:gray;
+    background-color: #AAC0;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    
+}
+label{
+    margin-right: 100px;
+    color:brown;
+    
+    
+}
+#about{
+    width: 600px;
+    height:400px;
+    text-align: center;
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/mechanics-repairing-car-in-service-station-2953459-2451647.png?f=webp");
+    background-repeat: no-repeat;
+    margin-left: 130px;
+    
+}
+#portfolio{
+    width: 600px;
+    height:400px;
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/charging-ev-at-electric-energy-station-marked-with-map-pin-11848849-9696216.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 100px;
+  
+    
+}
+#service{
+    width: 600px;
+    height:400px;
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/mechanic-checking-car-engine-2953460-2451648.png?f=webp");
+    background-repeat: no-repeat;
+    text-align: center;
+    
+     
+}  
+#contact{
+    width: 600px;
+    height:400px;
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/mechanic-giving-car-key-to-customer-2953442-2451634.png?f=webp");
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+table.center{
+    margin-top: 50px;
+    margin-left: 500px;
+    
+}
+tr:hover{
+    background-color: green;
+
+}
+table{
+    width:250px;
+    height: 250px;
+}
+ol{
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 200px;
+    color: rgb(12, 2, 2);
+}
+form{
+    margin: 400px;
+    width: 800px;
+    height:600 px;
+    background-color: white;
+}
+body{
+    background-color: skyblue;
+}
+samp{
+    margin-left: 700px;
+}
+
+p{
+    margin-top: 50px;
+    margin-right: 600px;
+    width:200px;
+}

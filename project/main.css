@@ -1,0 +1,22 @@
+.login {
+    position: absolute;
+    background-color: lightcyan;
+    padding: 30px;
+}
+input[type=text]{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+input[type=password]{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: greenyellow;
+    border: 1px solid gray;
+    border-radius: 10px;
+}

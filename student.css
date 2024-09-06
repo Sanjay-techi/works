@@ -1,0 +1,64 @@
+.frame1,.card:hover{
+  transform: scale(1.10);;
+}
+.frame2{
+    position: relative;
+    top: 85px;
+}
+.frame3{
+    position: relative;
+    top: 100px;
+}
+ul li{
+    list-style: none;
+    
+}
+.frame5{
+    position: relative;
+    top: 120px;
+}
+.logo:hover{
+    transform: scale(1.10);;
+  }
+
+  .card :hover{
+    transform: scale(1.10);
+}
+.frame7{
+    position: relative;
+    top: 200px;
+}
+.frame8{
+    position: relative;
+    top: 300px;
+    padding: 100px;
+    background-color: blanchedalmond;
+}
+.frame10{
+    position: relative;
+    top: 350px;
+}
+
+.frame11,.card2{
+    position: relative;
+    top: 450px;
+    border: none;
+ }
+ .frame11 h4:hover{
+    color: #f61a1a;
+    
+ }
+ .frame12{
+    position: relative;
+    top: 500px;
+    
+ }
+ .frame13{
+    position: relative;
+    top: 700px;
+ }
+ #option{
+    border: none;
+   
+ }
+ 

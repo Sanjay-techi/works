@@ -1,0 +1,62 @@
+.container h2,p,button{
+    position: relative;
+    bottom: 250px;
+}
+.frame1{
+    position: relative;
+    top:100px;
+    left: 150px;
+}
+.frame1 button{
+   bottom: 80px;
+}
+.frame1 h3{
+    position: relative;
+    color: red;
+    top: 50px;
+}
+.frame1 p{
+    top: 60px;
+}
+.frame1 img{
+    position: relative;
+   left: 540px;
+   bottom: 140px;
+}
+.card-text{
+    top: 10px;
+}
+
+ul button{
+    top: 20px;
+    height: 50px;
+}
+.frame2 h1{
+    position: relative;
+    left: 300px;
+    bottom: 500px;
+}
+.frame2 button{
+   left: 300px;
+   bottom: 480px;
+   width: 150px;
+   height: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    display:block;
+}
+.icon-overlay {
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 300px;
+   justify-content: center;
+}

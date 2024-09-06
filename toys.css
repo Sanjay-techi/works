@@ -1,0 +1,54 @@
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar-brand {
+    margin-left: 150px;
+}
+.container{
+    background: url(https://websitedemos.net/gift-shop-04/wp-content/uploads/sites/919/2021/07/box-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    width: 100%;
+    height: 100vh;
+
+}
+.container h1{
+    position: absolute;
+    top: 250px;
+    letter-spacing: 8px;
+}
+.container p{
+    position: absolute;
+    top: 400px;
+}
+.container button{
+    position: absolute;
+    top: 455px;
+}
+
+.content{
+    margin-left: 200px;
+   
+}
+.frame2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.frame4{
+   
+    background-image: linear-gradient(gray,pink,purple,orange);
+}
+.frame11 h1,p,button{
+    position: relative;
+    bottom: 400px;
+    left: 50px;
+    color: white;
+
+}
+ul li{
+    list-style: none;
+}

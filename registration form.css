@@ -1,0 +1,68 @@
+
+.frame1{
+    height: 150px;
+}
+.frame1,h1{
+    position: relative;
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.frame2{
+    position: relative;
+    height: 190px;
+}
+.frame2,p{
+    position: relative;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+}
+.frame3{
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+.frame3,input[type="date"]{
+    width: 60%;
+    left: 40%;
+    top: 15px;
+}
+.b1{
+    position: relative;
+    width: 300px;
+    height: 80px;
+    border: 2px solid black;
+}
+.p1{
+    position: relative;
+    left: 20%;
+    bottom: 40px;
+}
+.d1{
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+.frame4{
+    position: relative;
+    left: 50px;
+}
+.frame5{
+    position: relative;
+    justify-content: space-evenly;
+}
+  input[type=text]{
+    width: 80%;
+    height: 40px;
+  }
+  input[type=date]{
+    width: 40%;
+    height: 40px;
+  }
+  input[type=email]{
+    width: 80%;
+    height: 40px;
+  }
+  input[type=number]{
+    width: 80%;
+    height: 40px;
+  }

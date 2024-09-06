@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="todo">
+            <input type="text" id="task" placeholder="Enter the Element..">
+            <button type="button" onclick="addTask()">submit</button>
+        </div>
+        <ul id="task-list">
+
+        </ul>
+
+    </div>
+    <style>
+        ul li span{
+            position:absolute;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            font-size: 22px;
+            color:black;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    </style>
+   
+    <script>
+        let inputBox=document.getElementById("task");
+        let listContainer = document.getElementById("list-container");
+        function addTask() {
+            if(inputBox.value ===""){
+                alert("please insert elements..");
+            }
+            else{
+                let taskInput = document.getElementById("task");
+                let taskValue = taskInput.value;
+
+                let li=document.createElement("li");
+                
+                let textNode = document.createTextNode(taskValue);
+                li.appendChild(textNode);
+
+                let removeBtn=document.createElement("span");
+                removeBtn.textContent='x';
+                removeBtn.className="removeBtn";
+                removeBtn.onclick=function(){
+                li.remove();
+               }
+               li.appendChild(removeBtn);
+            }
+        }
+
+
+
+
+
+            // Get the input field and value
+           /* let taskInput = document.getElementById("task");
+            let taskValue = taskInput.value;
+
+            // Create a new list item 
+            let li = document.createElement("li");
+
+            // Add the task text to the list item
+            let textNode = document.createTextNode(taskValue);
+            li.appendChild(textNode);
+
+            // Add the list item to the task list
+            let ul = document.getElementById("task-list");
+            ul.appendChild(li);
+
+
+            taskInput.value = "";
+         
+            }*/
+          
+        
+    </script>
+</body>
+
+</html>

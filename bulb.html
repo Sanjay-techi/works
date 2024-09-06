@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulb.css">
+</head>
+
+<body>
+    <div class="img">
+        <img id="image" src="https://images-eu.ssl-images-amazon.com/images/I/61rCDYkxBbL._AC_UL600_SR600,600_.jpg"
+            alt="">
+    </div>
+    <div class="switch">
+        <button onclick="bulbOn()" class="switch">ON</button>
+        <button onclick="bulbOff()" class="switch">OFF</button>
+    </div>
+
+    <script>
+        function bulbOn() {
+            document.getElementById('image').src = "https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg"
+        }
+
+        function bulbOff() {
+            document.getElementById('image').src = "https://images-eu.ssl-images-amazon.com/images/I/61rCDYkxBbL._AC_UL600_SR600,600_.jpg"
+        }
+    </script>
+</body>
+
+</html>
